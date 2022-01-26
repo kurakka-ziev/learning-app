@@ -1,0 +1,121 @@
+/* buttons */
+/*
+.btn.btn-purple {
+    background-color: #5F41AB;
+    border-color: #5F41AB;
+}
+
+.btn.btn-purple:hover {
+    background-color: #513791;
+}
+
+.btn.btn-indigo, .btn.btn-indigo_s {
+    background-color: #536DFE;
+}
+
+.btn.btn-edit {
+    margin-left: 100px;
+}
+
+.btn.btn-indigo:hover {
+    background-color: #3F52BF;
+}
+
+.btn.btn-indigo_s:hover {
+    background-color: #C25746;
+    border-color: #C25746;
+
+}
+
+.btn.btn-outline-primary {
+    color: white;
+    border-color: white;
+}
+
+.btn.btn-outline-primary:hover {
+    background-color: #355070;
+    border-color: #355070;
+}
+
+*/
+
+.btn.btn-edit {
+    margin-left: 50%;
+}
+
+.btn.btn-ch-v {
+    color: white;
+    background-color: #6D5A7A;
+    border-color: #6D5A7A;
+}
+
+.btn.btn-ch-v:hover {
+    background-color: #545778;
+    border-color: #545778;
+}
+
+.btn.btn-primary, .btn.btn-delete {
+    color: white;
+    background-color: #355070;
+    border-color: #355070;
+}
+
+.btn.btn-primary:hover {
+    background-color: #273c53;
+    border-color: #273c53;
+}
+
+.btn.btn-delete:hover {
+    background-color: #A75B5B;
+    border-color: #A75B5B;
+    !important
+}
+
+.btn.btn-outline-primary {
+    color: white;
+    border-color: white;
+}
+
+.btn.btn-outline-primary:hover {
+    color: white;
+    border-color: #273c53;
+    background-color: #273c53;
+}
+
+.buttons-row {
+    margin-top: 50px;
+}
+
+.navbar.bg-purple {
+    background-color: #6d597a;
+    height: 80px;
+}
+
+.row.bg-purple:hover {
+    background-color: #C1B9CB;
+}
+
+.nav-brand {
+    font-size: 50px;
+}
+
+.div-1 {
+    padding-left: 2.4em;
+}
+
+.art-h1 {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.art-list {
+    margin-left: 60px;
+}
+
+.row.bg-purple {
+    background-color: #F1F5F8;
+}
+
+.forms {
+    max-width: 50%;
+}

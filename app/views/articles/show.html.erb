@@ -1,0 +1,20 @@
+<br>
+
+<div class="div-1 jumbotron">
+  <h1><%= @article.title %></h1>
+  <hr class="my-3">
+  <p><%= @article.body %></p>
+
+  <br>
+
+  <div style="align-content: space-between;">
+
+    <a class="btn btn-primary" href="<%= root_path %>"> Back </a>
+
+    <a class="btn btn-ch-v btn-edit" href="<%= edit_article_path(@article) %>" role="button"> Edit </a>
+
+    <a class="btn btn-delete" data-turbo-method="delete" data-turbo-confirm="Are you sure?" href="<%= @article %>">Destroy</a>
+  </div>
+  
+
+</div>
