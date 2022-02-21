@@ -1,6 +1,6 @@
-<br>
+<br> <br>
 
-<div class="div-1 jumbotron">
+<div class="div-1 container-lg jumbotron">
   <h1><%= @article.title %></h1>
   <hr class="my-3">
   <p><%= @article.body %></p>
@@ -13,8 +13,19 @@
 
     <a class="btn btn-ch-v btn-edit" href="<%= edit_article_path(@article) %>" role="button"> Edit </a>
 
-    <a class="btn btn-delete" data-turbo-method="delete" data-turbo-confirm="Are you sure?" href="<%= @article %>">Destroy</a>
+    <a class="btn btn-delete" data-turbo-method="delete" data-turbo-confirm="Are you sure?" href="<%= @article %>">Delete</a>
   </div>
-  
+</div> <br> <br> <br>
 
-</div>
+<div class="div-1 container-md">
+<h3>leave a comment here:</h3> <br>
+<%= render 'comments/form' %>
+
+</div> <br> <br>
+
+<div class="container-lg">
+  <h3>comments</h3>
+  <ol class="list-group">
+    <%= render @article.comments %>
+  </ol>
+</div>  

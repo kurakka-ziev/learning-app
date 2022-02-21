@@ -1,0 +1,17 @@
+<%= form_with model: [@article, @article.comments.build] do |form| %>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="comment[author]" id="comment_author">
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-text">your comment:</span>
+    <textarea class="form-control" aria-label="With textarea" name="comment[body]" id="comment_body"></textarea>
+  </div> <br>
+
+  <p>
+  <%= form.submit class:'btn btn-primary' %>
+  </p>
+
+<% end %>

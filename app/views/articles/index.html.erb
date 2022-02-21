@@ -1,16 +1,22 @@
 <br>
 <h1 style="margin-left: 5%; margin-top: 2%;">Articles</h1>
 
+<h4 style="margin-left: 5%; margin-top: 2%;"> It's <%= Article.all_count %> public post and <%= Article.arch_count %> archived in here)</h4>
+
 <% @articles.each do |article| %>
-	<div class="row no-gutters bg-purple position-relative container-md" style="margin-left: 5%; margin-top: 2%">
-	  <div class="">
-	  </div>
+	<% unless article.archived? %>
+	<div class="row no-gutters bg-purple position-relative container-ind" style="margin-left: 5%; margin-top: 2%">
 	  <div class=" p-4">
 	    <h3 class="mt-0"> <%= article.title %> </h3>
-	    <p> <%= article.body %> </p>
+	    <% if article.body.length <= 260 %>
+	    	<p> <%= article.body %> </p>
+	    <% elsif %>
+	    	<p> <%= article.body.slice(0..260) + "..."%> </p>
+	    <% end %>
 	    <a href="<%= article_path(article) %>" class="stretched-link"></a>
 	  </div>
-	</div>
+	</div>		
+	<% end %>
 <% end %>
 
 <a class="btn btn-primary" style="margin-left: 5%; margin-top: 2%; " href="<%= new_article_path %>"> New </a>

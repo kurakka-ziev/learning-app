@@ -119,3 +119,25 @@
 .forms {
     max-width: 50%;
 }
+
+.container-lg {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    margin-left: 3%;
+    max-width: 80%;
+}
+
+.container-md {
+    margin:  0;
+    padding: 0;
+    position: relative;
+
+    margin-left: 3%;
+    max-width: 35%;
+}
+
+.container-ind {
+    max-width: 60%;
+}
