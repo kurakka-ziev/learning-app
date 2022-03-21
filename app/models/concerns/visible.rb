@@ -17,8 +17,17 @@ module Visible
 			where(status: 'archived').count
 		end
 
-		def all_count
+		def pub_count
 			where(status: 'public').count
+		end
+
+		def prvt_count
+			where(status: 'private').count
+		end
+
+		def all_count
+			arts = Article.all
+			arts.count
 		end
 	end
 

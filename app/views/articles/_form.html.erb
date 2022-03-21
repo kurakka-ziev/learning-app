@@ -16,9 +16,9 @@
       <% end %>
     </div>
 
-    <div class="field form-group">
-      <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
-    </div>
+    <select class="form-select" aria-label="Default select example" name="article[status]" id="article_status"><option selected="selected" value="public">public</option>
+    <option value="private">private</option>
+    <option value="archived">archived</option></select> <br>
 
     <div class="actions">
       <%= form.submit class:'btn btn-primary' %>

@@ -7,6 +7,10 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
+  def archived
+    @articles = Article.where(status:"archived")
+  end
+
   def new
     @article = Article.new
   end
