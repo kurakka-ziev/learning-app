@@ -1,8 +1,16 @@
-<% unless comment.archived? %>
+<% unless comment.archived? and comment.body == ""%>
     <li class="list-group-item d-flex justify-content-between align-items-start">
       <div class="ms-2 me-auto">
         <div class="fw-bold">author: <%= comment.author %></div>
-        text: <%= comment.body %>
+        text: <%= comment.body %> <br>
+
+          <%= link_to "delete", [comment.article, comment], class: "btn btn-delete", data: {
+                turbo_method: :delete,
+                turbo_confirm: "Are you sure?"
+              } %>
       </div>
+      <br>
     </li>
+
+
 <% end %>

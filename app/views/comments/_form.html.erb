@@ -9,9 +9,27 @@
     <span class="input-group-text">your comment:</span>
     <textarea class="form-control" aria-label="With textarea" name="comment[body]" id="comment_body"></textarea>
   </div> <br>
+  
+
+<select class="form-select" aria-label="Default select example" id="comment_status" name="comment[status]">
+  <option selected value="public">public</option>
+  <option value="private">private</option>
+  <option value="archived">archived</option>
+</select>
+
+<br>
+
+
+<!-- <p>
+  <%= form.label :status %><br>
+  <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+</p> -->
+
+
 
   <p>
   <%= form.submit class:'btn btn-primary' %>
   </p>
 
 <% end %>
+

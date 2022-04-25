@@ -1,8 +1,6 @@
 <br>
 <h1 style="margin-left: 5%; margin-top: 2%;">Articles</h1>
 
-<h4 style="margin-left: 5%; margin-top: 2%;"> It's <%= Article.all_count %> public post and <%= Article.arch_count %> archived in here)</h4>
-
 <% @articles.each do |article| %>
 	<% unless article.archived? %>
 	<div class="row no-gutters bg-purple position-relative container-ind" style="margin-left: 5%; margin-top: 2%">
@@ -21,4 +19,4 @@
 
 <a class="btn btn-primary" style="margin-left: 5%; margin-top: 2%; " href="<%= new_article_path %>"> New </a>
 
-<a class="btn btn-ch-v" href="/articles/archived" style="margin-left: 1%; margin-top: 2%;"> Show archived </a>
+<a class="btn btn-ch-v" href="/articles/archived" style="margin-left: 1%; margin-top: 2%;"> Show <%= Article.arch_count %> archived </a>
