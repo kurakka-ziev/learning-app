@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+  # http_basic_authenticate_with name: "kurakka", password: "1234", except: [:index, :show, :archived]
 
   def index
     @articles = Article.all
@@ -12,6 +12,10 @@ class ArticlesController < ApplicationController
   def archived
     @articles = Article.where(status:"archived")
   end
+
+  #def private
+  # @articles = Article.where(status: "private")
+  #end
 
   def new
     @article = Article.new

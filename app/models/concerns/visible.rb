@@ -29,5 +29,4 @@ module Visible
 			arts.count
 		end
 	end
-
 end

@@ -1,8 +1,8 @@
-<% unless comment.archived?%>
+
     <li class="list-group-item d-flex justify-content-between align-items-start">
       <div class="ms-2 me-auto">
         <div class="fw-bold">author: <%= comment.author %></div>
-        text: <%= comment.body %> <br>
+        <%= comment.body %> <br>
 
           <%= link_to "delete", [comment.article, comment], class: "btn btn-delete", data: {
                 turbo_method: :delete,
@@ -11,6 +11,3 @@
       </div>
       <br>
     </li>
-
-
-<% end %>

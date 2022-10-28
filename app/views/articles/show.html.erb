@@ -5,6 +5,8 @@
   <hr class="my-3">
   <p><%= @article.body %></p>
 
+  
+
   <br>
 
   <div style="align-content: space-between;">
@@ -23,9 +25,11 @@
 
 </div> <br> <br>
 
-<div class="container-lg">
-  <h3>comments</h3>
-  <ol class="list-group">
-    <%= render @article.comments %>
-  </ol>
-</div>  
+<% unless @article.comments.count == 0%>
+  <div class="container-lg">
+    <h3>comments</h3>
+      <ol class="list-group">
+        <%= render @article.comments %>
+      </ol>
+  </div>  
+<% end %>

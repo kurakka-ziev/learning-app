@@ -10,7 +10,7 @@
 
     <div class="field form-group">
       <%= form.label :body, class: "h4" %> <br>
-      <%= form.text_area :body, class: "form-control" %> <br>
+      <%= form.text_area :body, class: "form-control", style: "height: 300px" %> <br>
       <% article.errors.full_messages_for(:body).each do |message| %>
         <div><%= message %></div>
       <% end %>
